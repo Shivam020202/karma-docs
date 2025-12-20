@@ -112,31 +112,24 @@
     </header>
 
     <!-- Hero Section -->
-    <!-- Hero Section -->
-    <!-- Video Hero Section -->
-    <section class="relative flex flex-col md:block w-full h-auto md:h-screen min-h-[600px] overflow-hidden">
-        <!-- Video Container -->
-        <div class="relative w-full aspect-video md:absolute md:inset-0 md:h-full md:aspect-auto z-0">
-            <video autoplay muted loop playsinline class="w-full h-full object-cover">
-                <!-- Placeholder Video: Abstract Blue/Purple Network -->
-                <source
-                    src="https://res.cloudinary.com/de4kw1t2i/video/upload/v1766061656/grok-video-e4dc581f-f5a8-44a4-b391-c39ec8a718b6_qzypfn.mp4"
-                    type="video/mp4">
+    <!-- Video Hero Section - Fullscreen -->
+    <section class="relative w-full h-screen min-h-[600px] overflow-hidden">
+        <!-- Video Container - Full Screen -->
+        <div class="absolute inset-0 w-full h-full z-0">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover scale-110">
+                <source src="assets/hero-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <!-- Overlay for Desktop: Adds readability -->
-            <div class="hidden md:block absolute inset-0 bg-black/40"></div>
+            <!-- Dark Overlay for text readability -->
+            <div class="absolute inset-0 bg-black/50"></div>
         </div>
 
-        <!-- Content Overlay / Block -->
-        <div
-            class="relative z-10 bg-white p-12 text-center md:absolute md:inset-0 md:bg-transparent md:flex md:flex-col md:justify-end md:items-center md:pb-32 md:p-0">
-            <h1
-                class="font-sans font-base text-4xl md:text-5xl mb-6 leading-tight text-brand-purple md:text-white drop-shadow-lg">
+        <!-- Content Overlay - Centered -->
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 pt-20">
+            <h1 class="font-sans font-bold text-4xl md:text-6xl mb-6 leading-tight text-white drop-shadow-lg">
                 Reclaim Your Life
             </h1>
-            <p
-                class="text-lg md:text-base text-gray-600 md:text-gray-100 mb-8 max-w-2xl mx-auto md:drop-shadow-md font-medium">
+            <p class="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-md font-medium">
                 Advanced, non-invasive TMS therapy for depression and mental wellness.
             </p>
             <a href="#appointment"
@@ -197,30 +190,26 @@
             <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">We Accept Major Insurance Plans
             </p>
             <div
-                class="flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                <div class="h-12 w-auto flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Blue_Cross_Blue_Shield_Association_logo.svg/2560px-Blue_Cross_Blue_Shield_Association_logo.svg.png"
-                        alt="BlueCross" class="h-full object-contain">
-                </div>
+                class="flex flex-wrap md:flex-nowrap justify-center items-center gap-8 md:gap-12 lg:gap-16 hover:opacity-100 transition-all duration-500">
+                <!-- <div class="h-12 w-auto flex items-center justify-center">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/logo-bcbssc-mobile-2x_ytdpm3.png"
+                        alt="BlueCross BlueShield" class="h-full object-contain">
+                </div> -->
                 <div class="h-10 w-auto flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Anthem_Inc._logo.svg/2560px-Anthem_Inc._logo.svg.png"
-                        alt="Anthem" class="h-full object-contain">
-                </div>
-                <div class="h-10 w-auto flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Aetna_Logo.svg/1024px-Aetna_Logo.svg.png"
-                        alt="Aetna" class="h-full object-contain">
-                </div>
-                <div class="h-12 w-auto flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Cigna_logo.svg/1280px-Cigna_logo.svg.png"
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/Cigna_Healthcare_Logo_2_yxpvat.webp"
                         alt="Cigna" class="h-full object-contain">
                 </div>
                 <div class="h-10 w-auto flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/UnitedHealth_Group_logo.svg/2560px-UnitedHealth_Group_logo.svg.png"
-                        alt="United" class="h-full object-contain">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/United_Healthcare_Logo_Alternative_2_ci9trh.webp"
+                        alt="United Healthcare" class="h-full object-contain">
                 </div>
-                <div class="h-12 w-auto flex items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Medicare_Logo.svg/1280px-Medicare_Logo.svg.png"
-                        alt="Medicare" class="h-full object-contain">
+                <div class="h-10 w-auto flex items-center justify-center">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231588/Aetna_Logo_ss_Violet_RGB_Coated_vchoob.svg"
+                        alt="Aetna" class="h-full object-contain">
+                </div>
+                <div class="h-10 w-auto flex items-center justify-center">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/download_ijs4qw.svg"
+                        alt="Insurance" class="h-full object-contain">
                 </div>
             </div>
         </div>
@@ -403,11 +392,10 @@
                 <!-- Card 1: Depression -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="0">
-                    <img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <img src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp"
                         alt="Depression"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/90 via-black/20 to-transparent">
-                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">Depression</h3>
@@ -424,10 +412,10 @@
                 <!-- Card 2: Anxiety -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="Anxiety"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-black/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">Anxiety</h3>
@@ -444,10 +432,10 @@
                 <!-- Card 3: PTSD -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227258/Gemini_Generated_Image_pl82z1pl82z1pl82_pqce33.png"
                         alt="PTSD"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 via-black/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">PTSD</h3>
@@ -464,10 +452,10 @@
                 <!-- Card 4: ADHD -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1555685812-4b943f3db9f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227888/Gemini_Generated_Image_ezawtnezawtnezaw_e5bgqx.webp"
                         alt="ADHD"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-yellow-700/90 via-black/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">ADHD</h3>
@@ -484,10 +472,10 @@
                 <!-- Card 5: Mood Disorders -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="400">
-                    <img src="https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227888/Gemini_Generated_Image_kailvakailvakail_shww2m.webp"
                         alt="Mood Disorders"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-pink-900/90 via-black/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">Mood Disorders</h3>
@@ -504,10 +492,10 @@
                 <!-- Card 6: Schizophrenia -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="500">
-                    <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227888/Gemini_Generated_Image_g8re93g8re93g8re_vgiygt.webp"
                         alt="Schizophrenia"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-black/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">Schizophrenia</h3>
@@ -524,10 +512,10 @@
                 <!-- Card 7: OCD -->
                 <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer md:col-span-1 lg:col-span-2"
                     data-aos="fade-up" data-aos-delay="600">
-                    <img src="https://images.unsplash.com/photo-1577029994910-77d8c367d14d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766230247/Gemini_Generated_Image_i8uuz4i8uuz4i8uu_lwhvdh.webp"
                         alt="OCD"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-black/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                         <h3 class="text-xl font-bold text-white mb-1">OCD</h3>
@@ -580,10 +568,10 @@
                         His mission is to de-stigmatize mental health and provide accessible, effective treatments that
                         empower patients to take control of their lives.
                     </p>
-                    <a href="#"
+                    <!-- <a href="#"
                         class="inline-flex items-center bg-brand-purple text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-purpleLight transition-all shadow-md hover:shadow-brand-purple/40 hover:-translate-y-0.5 text-sm">
                         Read Full Bio <i class="fas fa-user-md ml-2"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
