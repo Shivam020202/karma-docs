@@ -53,3 +53,57 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #603177; /* Brand purple */
 }
+
+.divider-path {
+  opacity: 0;
+  animation: fadeInPath 0.4s ease-out forwards;
+}
+
+.divider-diamond {
+  animation: fadeInDiamond 0.5s ease-out forwards;
+  transform-origin: center;
+}
+
+.divider-left-1 {
+  animation-delay: 0.1s;
+}
+
+.divider-right-1 {
+  animation-delay: 0.1s;
+}
+
+.divider-left-2 {
+  animation-delay: 0.25s;
+}
+
+.divider-right-2 {
+  animation-delay: 0.25s;
+}
+
+.divider-diamond {
+  animation-delay: 0s;
+}
+
+@keyframes fadeInPath {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeInDiamond {
+  from {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
