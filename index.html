@@ -654,9 +654,9 @@
     <section class="py-24 relative bg-gray-900 text-white overflow-hidden" id="science">
         <!-- Background decorative elements -->
         <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-purple/20 skew-x-12 transform origin-top-right"></div>
-        <div class="absolute inset-0 z-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-                alt="Clinic Background" class="w-full h-full object-cover grayscale">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1665652475985-37e285aeff53?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Clinic Background" class="w-full h-full object-cover">
         </div>
 
         <div class="container mx-auto px-4 relative z-10">
@@ -694,26 +694,53 @@
 
                 <!-- Video -->
                 <div class="w-full lg:w-1/2">
-                    <div
-                        class="relative bg-black rounded-2xl shadow-2xl overflow-hidden aspect-video group cursor-pointer border-4 border-gray-800">
-                        <div
-                            class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all z-20">
+                    <div id="youtube-player"
+                        class="relative bg-black rounded-2xl shadow-2xl overflow-hidden aspect-video group cursor-pointer border-4 border-gray-800"
+                        onclick="loadYouTubeVideo()">
+
+                        <!-- Thumbnail Preview (shown initially) -->
+                        <div id="video-thumbnail" class="absolute inset-0">
+                            <!-- YouTube Thumbnail -->
+                            <img src="https://img.youtube.com/vi/5gzxAF5TZoE/maxresdefault.jpg"
+                                alt="TMS Video - Watch Now"
+                                class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105">
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+
+                            <!-- Play Button -->
+                            <div class="absolute inset-0 flex items-center justify-center z-20">
+                                <div
+                                    class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform text-white">
+                                    <i class="fas fa-play ml-1 text-2xl"></i>
+                                </div>
+                            </div>
+
+                            <!-- Floating Tag -->
                             <div
-                                class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform text-white border border-white/50">
-                                <i class="fas fa-play ml-2 text-2xl"></i>
+                                class="absolute bottom-6 left-6 bg-brand-orange text-white px-4 py-1 rounded font-bold text-sm z-30">
+                                Watch Video
                             </div>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
-                            alt="TMS Video Thumbnail"
-                            class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105">
 
-                        <!-- Floating Tag -->
-                        <div
-                            class="absolute bottom-6 left-6 bg-brand-orange text-white px-4 py-1 rounded font-bold text-sm z-30">
-                            Watch Video
-                        </div>
+                        <!-- YouTube Iframe (loaded on click) -->
+                        <div id="video-iframe" class="hidden absolute inset-0"></div>
                     </div>
                 </div>
+
+                <script>
+                    function loadYouTubeVideo() {
+                        const thumbnail = document.getElementById('video-thumbnail');
+                        const iframeContainer = document.getElementById('video-iframe');
+
+                        // Hide thumbnail
+                        thumbnail.classList.add('hidden');
+
+                        // Show and load iframe
+                        iframeContainer.classList.remove('hidden');
+                        iframeContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/5gzxAF5TZoE?autoplay=1&rel=0" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    }
+                </script>
             </div>
         </div>
     </section>
@@ -912,12 +939,12 @@
     <!-- Footer -->
     <footer class="relative overflow-hidden font-sans">
         <!-- Gradient Background Layers -->
-        <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900 to-black"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-950 to-black"></div>
         <div class="absolute inset-0 bg-gradient-to-br from-brand-purple/10 via-transparent to-brand-orange/5"></div>
 
         <!-- Subtle Logo Watermark -->
         <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-[0.03] pointer-events-none">
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-[0.06] pointer-events-none">
             <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Logo-2_bchwgb.webp" alt=""
                 class="w-full h-full object-contain">
         </div>
