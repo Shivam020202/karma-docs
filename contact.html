@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Karma Doctors & Associates - We are here to help you on your journey to mental wellness. Reach out to us today.">
+    <title>Contact Us | Karma Doctors & Associates</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#603177',
+                            purpleLight: '#7A4D8F',
+                            orange: '#F48F12',
+                            orangeHover: '#D67A0A',
+                            dark: '#1F2937',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for animations/overrides -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="font-body text-gray-700 antialiased overflow-x-hidden">
+
+    <!-- Header/Nav (Synced with Home Page) -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-4 group"
+        id="main-header">
+
+        <!-- Top Contact Bar (Initially hidden, revealed on scroll via JS classes) -->
+        <div id="top-contact-bar"
+            class="container mx-auto px-4 mb-1 hidden opacity-0 transition-all duration-300 transform -translate-y-2">
+            <div
+                class="flex flex-col sm:flex-row justify-between items-center text-xs text-brand-purple font-medium backdrop-blur rounded-lg px-4 py-2 shadow-sm border border-gray-200 bg-gray-100">
+                <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+                    <span><i class="fas fa-phone-alt mr-2 text-brand-orange"></i> +1 (951) 297 8375</span>
+                    <span class="hidden sm:inline"><i class="fas fa-envelope mr-2 text-brand-orange"></i>
+                        contact@karmadocs.com</span>
+                </div>
+                <div>
+                    <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4  flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html"
+                class="text-2xl font-bold font-sans tracking-tight flex items-center transition-all duration-500">
+                <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Karma-Docs-Logo-Horizental_w48ja1.webp"
+                    alt="KDA logo" class="h-20 transition-all duration-500">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide">
+                <a href="index.html" class="hover:text-brand-purple transition-colors">Home</a>
+                <a href="about.html" class="hover:text-brand-purple transition-colors">About Us</a>
+                <a href="index.html#conditions" class="hover:text-brand-purple transition-colors">Conditions</a>
+                <a href="index.html#treatments" class="hover:text-brand-purple transition-colors">Treatments</a>
+                <a href="contact.html" class="text-brand-purple font-bold transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center space-x-4">
+                <a href="contact.html"
+                    class="hidden sm:inline-flex items-center justify-center bg-gradient-to-r from-brand-orange to-brand-orangeHover text-white px-6 py-2.5 rounded-full font-semibold uppercase text-xs tracking-wider transition-all transform hover:-translate-y-0.5 hover:shadow-lg shadow-md">
+                    Book Online
+                </a>
+                <button class="lg:hidden text-2xl text-gray-800 focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t border-gray-100 absolute w-full shadow-lg" id="mobile-menu">
+            <div class="flex flex-col px-4 py-4 space-y-4 font-medium uppercase text-sm">
+                <a href="index.html" class="block hover:text-brand-purple">Home</a>
+                <a href="about.html" class="block hover:text-brand-purple">About Us</a>
+                <a href="index.html#conditions" class="block hover:text-brand-purple">Conditions</a>
+                <a href="index.html#treatments" class="block hover:text-brand-purple">Treatments</a>
+                <a href="contact.html" class="block text-brand-orange font-bold">Contact</a>
+                <a href="contact.html" class="block text-brand-orange font-bold">Book Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Banner Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden bg-brand-purple">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1551009175-8a68da93d5f9?q=80&w=2071&auto=format&fit=crop"
+                alt="Banner Background" class="w-full h-full object-cover opacity-40 mix-blend-multiply">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/50 to-brand-purpleLight/30"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 font-sans tracking-tight" data-aos="fade-up">
+                Contact Us</h1>
+            <nav class="flex justify-center" aria-label="Breadcrumb" data-aos="fade-up" data-aos-delay="100">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3 text-sm font-medium text-white/80">
+                    <li class="inline-flex items-center">
+                        <a href="index.html" class="hover:text-white transition-colors flex items-center">
+                            <i class="fas fa-home mr-2"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right mx-2 text-white/50 text-xs"></i>
+                            <span class="text-white">Contact</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Split Layout Content -->
+    <div class="flex flex-col lg:flex-row bg-white relative">
+
+        <!-- Left Side: Visual & Info (Sticky) -->
+        <div
+            class="lg:w-5/12 relative bg-brand-purple text-white flex flex-col justify-center lg:sticky lg:top-[85px] lg:h-[calc(100vh-85px)] overflow-hidden min-h-[600px] border-r border-white/10">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1887&q=80"
+                    alt="Calming Nature" class="w-full h-full object-cover opacity-20 mix-blend-overlay">
+                <div class="absolute inset-0 bg-gradient-to-br from-brand-purple/95 to-brand-dark/95"></div>
+            </div>
+
+            <!-- Content Wrapper -->
+            <div class="relative z-10 px-8 lg:px-16 py-12 flex flex-col h-full justify-center">
+                <div class="mb-12">
+                    <h2 class="font-sans text-3xl lg:text-4xl font-bold mb-6 leading-tight">Let's Start Your <br><span
+                            class="text-brand-orange">Healing Journey.</span></h2>
+                    <p class="text-lg text-gray-300 font-light leading-relaxed max-w-md">
+                        We are here to listen, support, and guide you. Reach out to us for appointments, inquiries, or
+                        just to say hello.
+                    </p>
+                </div>
+
+                <!-- Contact Details List -->
+                <div class="space-y-8">
+                    <!-- Item 1 -->
+                    <div class="flex items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-4 backdrop-blur-sm border border-white/10">
+                            <i class="fas fa-phone-alt text-brand-orange"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-1">Phone</p>
+                            <a href="tel:19512978375"
+                                class="text-lg font-medium hover:text-brand-orange transition-colors">+1 (951) 297
+                                8375</a>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-4 backdrop-blur-sm border border-white/10">
+                            <i class="fas fa-envelope text-brand-orange"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-1">Email</p>
+                            <a href="mailto:contact@karmadocs.com"
+                                class="text-lg font-medium hover:text-brand-orange transition-colors">contact@karmadocs.com</a>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex items-start">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mr-4 backdrop-blur-sm border border-white/10">
+                            <i class="fas fa-map-marker-alt text-brand-orange"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-1">Headquarters
+                            </p>
+                            <p class="text-lg font-medium">Palm Springs, CA 92264</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decorative element -->
+                <div class="mt-auto hidden lg:block pt-12">
+                    <p class="text-xs text-white/30 tracking-widest uppercase">Karma Doctors & Associates</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Form (Scrollable on Desktop)-->
+        <div class="lg:w-7/12 lg:ml-auto w-full bg-gray-50/50">
+            <div class="px-6 py-12 lg:px-20 lg:py-24 max-w-3xl mx-auto flex flex-col justify-center">
+
+                <h2 class="font-sans text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
+
+                <form action="#" method="POST"
+                    class="space-y-8 bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-brand-purple/5 border border-white">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="group relative">
+                            <label for="firstName" class="block text-sm font-semibold text-gray-700 mb-2">First
+                                Name</label>
+                            <input type="text" id="firstName" name="firstName"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 transition-all outline-none text-gray-800 placeholder-gray-400"
+                                placeholder="Jane">
+                        </div>
+                        <div class="group relative">
+                            <label for="lastName" class="block text-sm font-semibold text-gray-700 mb-2">Last
+                                Name</label>
+                            <input type="text" id="lastName" name="lastName"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 transition-all outline-none text-gray-800 placeholder-gray-400"
+                                placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="group relative">
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email
+                                Address</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 transition-all outline-none text-gray-800 placeholder-gray-400"
+                                placeholder="jane@example.com">
+                        </div>
+                        <div class="group relative">
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone
+                                Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 transition-all outline-none text-gray-800 placeholder-gray-400"
+                                placeholder="(555) 123-4567">
+                        </div>
+                    </div>
+
+                    <div class="group relative">
+                        <label for="interest" class="block text-sm font-semibold text-gray-700 mb-2">Service of
+                            Interest</label>
+                        <div class="relative">
+                            <select id="interest" name="interest"
+                                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 transition-all outline-none text-gray-800 appearance-none cursor-pointer">
+                                <option value="">Select a service...</option>
+                                <option value="TMS">TMS Therapy</option>
+                                <option value="Psychiatry">Psychiatry Consultation</option>
+                                <option value="Therapy">Psychotherapy</option>
+                                <option value="Other">Other Inquiry</option>
+                            </select>
+                            <i
+                                class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative">
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 transition-all outline-none text-gray-800 placeholder-gray-400"
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-4 bg-brand-orange text-white font-bold rounded-xl shadow-lg shadow-brand-orange/20 hover:shadow-brand-orange/40 hover:-translate-y-1 transition-all">
+                        Send Message
+                    </button>
+
+                    <p class="text-xs text-gray-400 text-center mt-4">
+                        By submitting this form, you agree to our privacy policy.
+                    </p>
+                </form>
+
+                <!-- Locations Grid (Below Form) -->
+                <div class="mt-20 pt-10 border-t border-gray-200">
+                    <h3 class="font-sans text-xl font-bold text-gray-900 mb-8 flex items-center">
+                        <span class="w-1.5 h-6 bg-brand-purple rounded-full mr-3"></span> Our Locations
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Loc 1 -->
+                        <div
+                            class="bg-gray-100 p-6 rounded-2xl hover:bg-white hover:shadow-md transition-all border border-transparent hover:border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Palm Springs</h4>
+                            <p class="text-sm text-gray-500 leading-snug">560 S Paseo Dorotea, Suite 4-B<br>Palm
+                                Springs, CA 92264</p>
+                        </div>
+                        <!-- Loc 2 -->
+                        <div
+                            class="bg-gray-100 p-6 rounded-2xl hover:bg-white hover:shadow-md transition-all border border-transparent hover:border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Rancho Mirage</h4>
+                            <p class="text-sm text-gray-500 leading-snug">35400 Bob Hope Dr. Suite 206<br>Rancho Mirage,
+                                CA 92270</p>
+                        </div>
+                        <!-- Loc 3 -->
+                        <div
+                            class="bg-gray-100 p-6 rounded-2xl hover:bg-white hover:shadow-md transition-all border border-transparent hover:border-gray-100 sm:col-span-2">
+                            <h4 class="font-bold text-gray-900 mb-2">Twentynine Palms</h4>
+                            <p class="text-sm text-gray-500 leading-snug">72724 29 Palms Hwy. Suite 107<br>Twentynine
+                                Palms, CA 92277</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="relative overflow-hidden font-sans bg-gray-900">
+        <!-- Main Footer Content -->
+        <div class="relative z-10 pt-16 pb-8">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-12 gap-8 lg:gap-12">
+                    <!-- Brand Column -->
+                    <div class="md:col-span-4 lg:col-span-4">
+                        <a href="index.html" class="inline-block mb-6">
+                            <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Logo-2_bchwgb.webp"
+                                alt="Karma Doctors" class="h-16">
+                        </a>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
+                            Providing top-tier psychiatric care and TMS therapy with a compassionate, integrative
+                            approach.
+                        </p>
+                        <!-- Social Links -->
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm transition-colors hover:bg-brand-purple hover:border-brand-purple hover:text-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm transition-colors hover:bg-brand-purple hover:border-brand-purple hover:text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm transition-colors hover:bg-brand-purple hover:border-brand-purple hover:text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm transition-colors hover:bg-brand-purple hover:border-brand-purple hover:text-white">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-5 flex items-center">
+                            <span class="w-2 h-2 bg-brand-orange rounded-full mr-2"></span>
+                            Quick Links
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="index.html"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">About
+                                    Us</a></li>
+                            <li><a href="about.html"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Our
+                                    Team</a></li>
+                            <li><a href="#process" class="text-gray-400 text-sm hover:text-white transition-colors">TMS
+                                    Therapy</a></li>
+                            <li><a href="#conditions"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Patient
+                                    Resources</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Conditions -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-5 flex items-center">
+                            <span class="w-2 h-2 bg-brand-purple rounded-full mr-2"></span>
+                            Conditions
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="#conditions"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Depression</a></li>
+                            <li><a href="#conditions"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Anxiety
+                                    Disorders</a></li>
+                            <li><a href="#conditions"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">PTSD</a></li>
+                            <li><a href="#conditions"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Bipolar
+                                    Disorder</a></li>
+                            <li><a href="#conditions"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">ADHD</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="md:col-span-4 lg:col-span-4">
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-5 flex items-center">
+                            <span class="w-2 h-2 bg-brand-orange rounded-full mr-2"></span>
+                            Get In Touch
+                        </h4>
+
+                        <!-- Contact Cards -->
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-4 p-3 rounded-xl bg-white/5 border border-white/5">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-purple/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-brand-purple text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white text-sm font-medium">Visit Us</p>
+                                    <p class="text-gray-400 text-xs">123 Healing Way, Suite 100<br>Los Angeles, CA 90001
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-white/5 border border-white/5">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-brand-orange text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white text-sm font-medium">Call Us</p>
+                                    <p class="text-gray-400 text-xs">(555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-white/5 border border-white/5">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-purple/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-brand-purple text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white text-sm font-medium">Email Us</p>
+                                    <p class="text-gray-400 text-xs">info@karmadocs.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="w-full max-w-lg mx-auto mt-12 mb-6 flex justify-center opacity-30">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" class="w-48 h-4">
+                        <path d="M450 65H130l-10-10h320l10 10z" fill="#ffffff" />
+                        <path d="M870 65H550l10-10h320l-10 10z" fill="#ffffff" />
+                        <path d="M500 15l35 35-35 35-35-35z" fill="#ffffff" />
+                        <path d="M440 45H70l10-10h370l-10 10z" fill="#ffffff" />
+                        <path d="M930 45H560l-10-10h370l10 10z" fill="#ffffff" />
+                    </svg>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    <p class="text-gray-500 text-xs">
+                        &copy; 2024 Karma Doctors & Associates. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-6 text-xs">
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors">HIPAA Compliance</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+</body>
+
+</html>
