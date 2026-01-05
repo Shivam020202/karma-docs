@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Anxiety Treatment in Palm Springs by Karma Doctors & Associates. Specialized care for GAD, Social Anxiety, and Phobias using therapy, medication, and TMS.">
+    <title>Anxiety Treatment | Karma Doctors & Associates</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#603177',
+                            purpleLight: '#7A4D8F',
+                            orange: '#F48F12',
+                            orangeHover: '#D67A0A',
+                            dark: '#1F2937',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for animations/overrides -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .pattern-grid {
+            background-image: radial-gradient(#603177 0.5px, transparent 0.5px), radial-gradient(#603177 0.5px, #f9fafb 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+
+<body class="font-body text-gray-700 antialiased overflow-x-hidden bg-gray-50">
+
+    <!-- Header/Nav -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-4 group"
+        id="main-header">
+
+        <!-- Top Contact Bar -->
+        <div id="top-contact-bar"
+            class="container mx-auto px-4 mb-1 hidden lg:block opacity-0 transition-all duration-300 transform -translate-y-2">
+            <div
+                class="flex flex-col sm:flex-row justify-between items-center text-xs text-brand-purple font-medium px-4 py-1 backdrop-blur rounded-lg bg-gray-100/90 shadow-sm border border-gray-200">
+                <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+                    <span><i class="fas fa-phone-alt mr-2 text-brand-orange"></i> (555) 123-4567</span>
+                    <span class="hidden sm:inline"><i class="fas fa-envelope mr-2 text-brand-orange"></i>
+                        info@karmadocs.com</span>
+                </div>
+                <div>
+                    <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html"
+                class="text-2xl font-bold font-sans tracking-tight flex items-center transition-all duration-500">
+                <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Karma-Docs-Logo-Horizental_w48ja1.webp"
+                    alt="KDA logo" class="h-20 transition-all duration-500">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-6 font-medium text-sm uppercase tracking-wide">
+                <a href="../index.html"
+                    class="text-white drop-shadow-md hover:text-brand-orange transition-colors">Home</a>
+                <a href="../about.html"
+                    class="text-white drop-shadow-md hover:text-brand-orange transition-colors">About Us</a>
+                <a href="../index.html#conditions"
+                    class="text-white drop-shadow-md hover:text-brand-orange transition-colors font-bold">Conditions</a>
+                <a href="../index.html#treatments"
+                    class="text-white drop-shadow-md hover:text-brand-orange transition-colors">Treatments</a>
+                <a href="../contact.html"
+                    class="text-white drop-shadow-md hover:text-brand-orange transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center space-x-4">
+                <a href="../contact.html"
+                    class="hidden sm:inline-flex items-center justify-center bg-gradient-to-r from-brand-orange to-brand-orangeHover text-white px-5 py-2 rounded-full font-semibold uppercase text-xs tracking-wider transition-all transform hover:-translate-y-0.5 hover:shadow-lg shadow-md">
+                    Book Online
+                </a>
+                <button class="lg:hidden text-2xl text-white focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t border-gray-100 absolute w-full shadow-lg" id="mobile-menu">
+            <div class="flex flex-col px-4 py-4 space-y-4 font-medium uppercase text-sm text-gray-800">
+                <a href="../index.html" class="block hover:text-brand-purple">Home</a>
+                <a href="../about.html" class="block hover:text-brand-purple">About Us</a>
+                <a href="../index.html#conditions" class="block text-brand-purple font-bold">Conditions</a>
+                <a href="../index.html#treatments" class="block hover:text-brand-purple">Treatments</a>
+                <a href="../contact.html" class="block hover:text-brand-purple">Contact</a>
+                <a href="../contact.html" class="block text-brand-orange font-bold">Book Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Calm nature background" class="w-full h-full object-cover">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-brand-purple/95 via-brand-purple/80 to-brand-purple/60 mix-blend-multiply">
+            </div>
+            <div class="absolute inset-0 bg-black/20"></div>
+
+            <!-- Floating particles animation -->
+            <!-- <div class="absolute inset-0 overflow-hidden opacity-30">
+                <div
+                    class="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-orange rounded-full mix-blend-screen filter blur-3xl animate-pulse">
+                </div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse"
+                    style="animation-delay: 2s"></div>
+            </div> -->
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center text-white">
+            <div data-aos="fade-down">
+                <span
+                    class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold text-xs uppercase tracking-widest mb-6 shadow-lg">
+                    <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+                    Conditions We Treat
+                </span>
+            </div>
+            <h1 class="font-sans text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg tracking-tight"
+                data-aos="fade-up" data-aos-delay="100">
+                Anxiety Treatment <br class="hidden md:block">in <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-yellow-300">Palm
+                    Springs</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md opacity-90"
+                data-aos="fade-up" data-aos-delay="200">
+                You don't have to face it alone. We offer a comprehensive, compassionate path to reclaiming your peace
+                of mind.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="#treatments"
+                    class="px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-orangeHover text-white font-bold uppercase tracking-wider transition-all shadow-lg hover:shadow-brand-orange/50 hover:-translate-y-1">
+                    Explore Treatments
+                </a>
+                <a href="../contact.html"
+                    class="px-8 py-3.5 rounded-full bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white hover:text-brand-purple text-white font-bold uppercase tracking-wider transition-all shadow-lg hover:-translate-y-1">
+                    Free Consultation
+                </a>
+            </div>
+        </div>
+
+        <!-- Wave Divider -->
+        <!-- <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[60px] md:h-[100px]" data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="fill-gray-50"></path>
+            </svg>
+        </div> -->
+    </section>
+
+    <!-- Overview Section - Clean & Modern -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative" data-aos="fade-right">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-br from-brand-orange/20 to-brand-purple/20 rounded-3xl blur-xl">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1620147512372-9e00421556bb?q=80&w=1000&auto=format&fit=crop"
+                        alt="Doctor consulting patient"
+                        class="relative rounded-2xl shadow-2xl border-4 border-white w-full object-cover h-[500px] z-10 transform transition-transform hover:scale-[1.01] duration-500">
+
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute -bottom-6 -right-6 z-20 bg-white p-4 rounded-xl shadow-xl max-w-xs border-l-4 border-brand-purple">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full bg-brand-purple/10 flex items-center justify-center text-brand-purple">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Expert Care</p>
+                                <p class="text-sm font-bold text-gray-800">Board-Certified Specialists</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7" data-aos="fade-left">
+                    <h4 class="text-brand-orange font-bold uppercase tracking-wider text-sm mb-2">Understanding the
+                        Condition</h4>
+                    <h2 class="font-sans text-4xl font-bold text-gray-900 mb-6">
+                        Anxiety is More Than <br> Just <span class="relative inline-block z-10">Worry <span
+                                class="absolute bottom-1 left-0 w-full h-3 bg-brand-orange/20 -z-10"></span></span>
+                    </h2>
+
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            It's a complex interplay of biology, psychology, and environment. While fear is a normal
+                            human emotion, anxiety becomes a disorder when it disrupts your ability to function, causing
+                            persistent dread, physical tension, and avoidance behaviors.
+                        </p>
+                        <p>
+                            At <strong class="text-brand-purple">Karma Doctors & Associates</strong>, we don't just
+                            treat symptoms. We look at the whole person. Our integrated approach combines advanced
+                            medical treatments with compassionate therapy to address the root causes of your anxiety.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="font-medium text-gray-700">Evidence-Based</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="font-medium text-gray-700">Personalized Plans</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="font-medium text-gray-700">Non-Judgmental</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="font-medium text-gray-700">Holistic Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRO Types of Anxiety Section -->
+    <section class="py-24 bg-white relative overflow-hidden pattern-grid">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="font-sans text-4xl md:text-5xl font-bold text-gray-800 mb-4">Spectrum of Anxiety</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-brand-purple to-brand-orange mx-auto rounded-full mb-6">
+                </div>
+                <p class="text-gray-600 text-lg">
+                    Anxiety manifests differently in everyone. Identifying your specific type is the first step toward
+                    effective treatment.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: GAD -->
+                <div class="group relative bg-white rounded-[2rem] p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-100 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-purple to-indigo-500">
+                    </div>
+                    <div
+                        class="absolute -right-10 -top-10 w-40 h-40 bg-brand-purple/5 rounded-full group-hover:scale-150 transition-transform duration-700">
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-8 border border-gray-50 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-brain text-3xl text-brand-purple bg-clip-text"></i>
+                        </div>
+
+                        <h3
+                            class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-purple transition-colors">
+                            Generalized Anxiety</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Chronic, excessive worry about everyday life events. The feeling of being constantly "on
+                            edge" or unable to relax.
+                        </p>
+
+                        <ul class="space-y-2 mb-8 border-t border-gray-100 pt-6">
+                            <li class="flex items-center text-sm text-gray-500"><span
+                                    class="w-1.5 h-1.5 bg-brand-purple rounded-full mr-2"></span> Constant Worry</li>
+                            <li class="flex items-center text-sm text-gray-500"><span
+                                    class="w-1.5 h-1.5 bg-brand-purple rounded-full mr-2"></span> Fatigue & Irritability
+                            </li>
+                        </ul>
+
+                        <a href="#contact"
+                            class="inline-flex items-center text-sm font-bold text-brand-purple uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                            Get Help <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Social Anxiety -->
+                <div class="group relative bg-white rounded-[2rem] p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-100 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-orange to-red-500"></div>
+                    <div
+                        class="absolute -right-10 -top-10 w-40 h-40 bg-brand-orange/5 rounded-full group-hover:scale-150 transition-transform duration-700">
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-8 border border-gray-50 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-users text-3xl text-brand-orange"></i>
+                        </div>
+
+                        <h3
+                            class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-orange transition-colors">
+                            Social Anxiety</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Intense fear of social interactions, public speaking, or being judged. Often leads to
+                            isolation and avoidance.
+                        </p>
+                        <ul class="space-y-2 mb-8 border-t border-gray-100 pt-6">
+                            <li class="flex items-center text-sm text-gray-500"><span
+                                    class="w-1.5 h-1.5 bg-brand-orange rounded-full mr-2"></span> Fear of Judgment</li>
+                            <li class="flex items-center text-sm text-gray-500"><span
+                                    class="w-1.5 h-1.5 bg-brand-orange rounded-full mr-2"></span> Avoidance Behavior
+                            </li>
+                        </ul>
+
+                        <a href="#contact"
+                            class="inline-flex items-center text-sm font-bold text-brand-orange uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                            Get Help <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Phobias -->
+                <div class="group relative bg-white rounded-[2rem] p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl border border-gray-100 overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+                    <div
+                        class="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/5 rounded-full group-hover:scale-150 transition-transform duration-700">
+                    </div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-8 border border-gray-50 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-feather-alt text-3xl text-blue-500"></i>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-500 transition-colors">
+                            Specific Phobias</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Irrational, paralyzing fear of specific objects or situations (heights, flying, etc) that
+                            provoke severe reaction.
+                        </p>
+                        <ul class="space-y-2 mb-8 border-t border-gray-100 pt-6">
+                            <li class="flex items-center text-sm text-gray-500"><span
+                                    class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Panic Attacks</li>
+                            <li class="flex items-center text-sm text-gray-500"><span
+                                    class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Physical Distress</li>
+                        </ul>
+
+                        <a href="#contact"
+                            class="inline-flex items-center text-sm font-bold text-blue-500 uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                            Get Help <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRO Symptoms Section - Dark Mode Contrast -->
+    <section class="py-24 bg-[#1a0f2e] relative overflow-hidden text-white">
+        <!-- Animated Background Blobs -->
+        <div
+            class="absolute top-0 left-0 w-[500px] h-[500px] bg-brand-purple/30 rounded-full blur-[100px] mix-blend-screen animate-pulse">
+        </div>
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-orange/20 rounded-full blur-[100px] mix-blend-screen animate-pulse"
+            style="animation-delay: 2.5s"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <!-- Left Content -->
+                <div class="lg:w-1/3" data-aos="fade-right">
+                    <span class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-4 block">Warning
+                        Signs</span>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Recognizing <br> the <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-pink-500">Signs</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        Symptoms often manifest physically before we acknowledge them mentally. If you experience
+                        several of these persistently, it may be time to seek support.
+                    </p>
+
+                    <a href="#contact"
+                        class="inline-block px-8 py-4 rounded-full bg-white text-brand-purple font-bold uppercase tracking-wider hover:bg-brand-orange hover:text-white transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(244,143,18,0.5)] transform hover:-translate-y-1">
+                        Book Assessment
+                    </a>
+                </div>
+
+                <!-- Right Grid -->
+                <div class="lg:w-2/3">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <!-- Symptom Item -->
+                        <div class="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-default"
+                            data-aos="fade-up" data-aos-delay="0">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-brand-purple to-indigo-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-heartbeat text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">Rapid Heartbeat</h4>
+                                    <p class="text-gray-400 text-sm">Palpitations or chest tightness</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Symptom Item -->
+                        <div class="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-default"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-brand-orange to-red-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-bolt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">Restlessness</h4>
+                                    <p class="text-gray-400 text-sm">Feeling "on edge" or jumpy</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Symptom Item -->
+                        <div class="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-default"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-bed text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">Insomnia</h4>
+                                    <p class="text-gray-400 text-sm">Difficulty falling or staying asleep</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Symptom Item -->
+                        <div class="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-default"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-brain text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">Poor Focus</h4>
+                                    <p class="text-gray-400 text-sm">Brain fog or inability to concentrate</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Symptom Item -->
+                        <div class="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-default"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-battery-empty text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">Chronic Fatigue</h4>
+                                    <p class="text-gray-400 text-sm">Feeling exhausted despite rest</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Symptom Item -->
+                        <div class="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-default"
+                            data-aos="fade-up" data-aos-delay="500">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-400 to-blue-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-compress-arrows-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">Muscle Tension</h4>
+                                    <p class="text-gray-400 text-sm">Constant tightness or aches</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRO Treatments Section -->
+    <section class="py-24 bg-gray-50" id="treatments">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-brand-purple font-bold uppercase tracking-widest text-sm mb-2 block">Our
+                    Approach</span>
+                <h2 class="font-sans text-4xl md:text-5xl font-bold text-gray-900 mb-6">Integrative Treatment Paths</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    We combine traditional psychiatry with modern technology to create a personalized recovery plan just
+                    for you.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Therapy Card -->
+                <div class="group bg-white rounded-[2.5rem] p-2 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 h-full flex flex-col"
+                    data-aos="fade-up">
+                    <div class="relative h-48 overflow-hidden rounded-[2rem] mb-4">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="Therapy"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-brand-purple shadow-lg">
+                            Foundation</div>
+                    </div>
+                    <div class="px-6 pb-8 flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Psychotherapy</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Deep work to understand triggers and reshape thought patterns. We use CBT, ACT, and Talk
+                            Therapy to build resilience.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-700 font-medium">
+                                <i class="fas fa-check text-green-500 mr-3"></i> Cognitive Restructuring
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700 font-medium">
+                                <i class="fas fa-check text-green-500 mr-3"></i> Exposure Therapy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meds Card -->
+                <div class="group bg-white rounded-[2.5rem] p-2 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 h-full flex flex-col"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-48 overflow-hidden rounded-[2rem] mb-4">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"
+                            alt="Medication"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-blue-600 shadow-lg">
+                            Support</div>
+                    </div>
+                    <div class="px-6 pb-8 flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Medication Management</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Targeted relief for severe symptoms. Our psychiatrists carefully prescribe and monitor
+                            medications to restore chemical balance.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-sm text-gray-700 font-medium">
+                                <i class="fas fa-check text-green-500 mr-3"></i> Precise Dosing
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700 font-medium">
+                                <i class="fas fa-check text-green-500 mr-3"></i> Holistic Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TMS Feature -->
+                <div class="group relative bg-gradient-to-br from-brand-purple to-purple-900 rounded-[2.5rem] p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 h-full text-white overflow-hidden flex flex-col"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <!-- Decor -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                    <div
+                        class="absolute bottom-0 left-0 w-64 h-64 bg-brand-orange/20 rounded-full blur-3xl -ml-32 -mb-32 animate-pulse">
+                    </div>
+
+                    <div class="relative z-10 flex-1">
+                        <div class="flex justify-between items-start mb-6">
+                            <div
+                                class="bg-brand-orange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg">
+                                Advanced</div>
+                            <i
+                                class="fas fa-microchip text-4xl text-white/20 group-hover:text-white/40 transition-colors"></i>
+                        </div>
+
+                        <h3 class="text-3xl font-bold mb-4">TMS Therapy</h3>
+                        <p class="text-purple-100 text-sm leading-relaxed mb-8">
+                            A breakthrough, non-invasive treatment using magnetic pulses to reactivate brain pathways.
+                            Ideal for treatment-resistant anxiety.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-white/10 rounded-xl p-3 backdrop-blur-sm">
+                                <p class="text-xs text-brand-orange font-bold uppercase">Safe</p>
+                                <p class="text-sm font-semibold">FDA Cleared</p>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-3 backdrop-blur-sm">
+                                <p class="text-xs text-brand-orange font-bold uppercase">Fast</p>
+                                <p class="text-sm font-semibold">20 Min Sessions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="../contact.html"
+                        class="block w-full text-center py-4 bg-white text-brand-purple rounded-xl font-bold uppercase tracking-wider hover:bg-brand-orange hover:text-white transition-all shadow-lg z-10">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRO Other Conditions (Visual Nav) -->
+    <section class="py-20 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-gray-400 mb-10 text-center uppercase tracking-widest">Also Treating</h3>
+
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <!-- Nav Item -->
+                <a href="#"
+                    class="group relative overflow-hidden rounded-full py-3 px-8 border border-gray-200 hover:border-brand-purple transition-all duration-300">
+                    <div
+                        class="absolute inset-0 bg-brand-purple/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <span
+                        class="relative z-10 text-gray-600 font-bold group-hover:text-brand-purple transition-colors">Depression</span>
+                </a>
+
+                <!-- Nav Item Active -->
+                <a href="#"
+                    class="relative overflow-hidden rounded-full py-3 px-8 bg-brand-orange text-white shadow-lg shadow-brand-orange/30 transform scale-105 cursor-default">
+                    <span class="font-bold">Anxiety</span>
+                </a>
+
+                <!-- Nav Item -->
+                <a href="#"
+                    class="group relative overflow-hidden rounded-full py-3 px-8 border border-gray-200 hover:border-brand-purple transition-all duration-300">
+                    <div
+                        class="absolute inset-0 bg-brand-purple/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <span
+                        class="relative z-10 text-gray-600 font-bold group-hover:text-brand-purple transition-colors">PTSD
+                        & Trauma</span>
+                </a>
+
+                <!-- Nav Item -->
+                <a href="#"
+                    class="group relative overflow-hidden rounded-full py-3 px-8 border border-gray-200 hover:border-brand-purple transition-all duration-300">
+                    <div
+                        class="absolute inset-0 bg-brand-purple/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <span
+                        class="relative z-10 text-gray-600 font-bold group-hover:text-brand-purple transition-colors">ADHD</span>
+                </a>
+
+                <!-- Nav Item -->
+                <a href="#"
+                    class="group relative overflow-hidden rounded-full py-3 px-8 border border-gray-200 hover:border-brand-purple transition-all duration-300">
+                    <div
+                        class="absolute inset-0 bg-brand-purple/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <span
+                        class="relative z-10 text-gray-600 font-bold group-hover:text-brand-purple transition-colors">Bipolar
+                        Disorder</span>
+                </a>
+
+                <!-- Nav Item -->
+                <a href="#"
+                    class="group relative overflow-hidden rounded-full py-3 px-8 border border-gray-200 hover:border-brand-purple transition-all duration-300">
+                    <div
+                        class="absolute inset-0 bg-brand-purple/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <span
+                        class="relative z-10 text-gray-600 font-bold group-hover:text-brand-purple transition-colors">OCD</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative overflow-hidden font-sans bg-gray-950">
+        <!-- Main Footer Content -->
+        <div class="relative z-10 pt-16 pb-8">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-12 gap-8 lg:gap-12">
+                    <!-- Brand Column -->
+                    <div class="md:col-span-4 lg:col-span-4">
+                        <a href="../index.html" class="inline-block mb-6">
+                            <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Logo-2_bchwgb.webp"
+                                alt="Karma Doctors" class="h-16">
+                        </a>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
+                            Providing top-tier psychiatric care and TMS therapy with a compassionate, integrative
+                            approach. Your journey to wellness starts here.
+                        </p>
+                        <!-- Socials -->
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm hover:bg-brand-purple hover:text-white transition-colors"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm hover:bg-brand-purple hover:text-white transition-colors"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#"
+                                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 text-sm hover:bg-brand-purple hover:text-white transition-colors"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-5 flex items-center">
+                            <span class="w-2 h-2 bg-brand-orange rounded-full mr-2"></span> Quick Links
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="../index.html"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Home</a></li>
+                            <li><a href="../about.html"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="../index.html#treatments"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Treatments</a></li>
+                            <li><a href="../contact.html"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Conditions -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-5 flex items-center">
+                            <span class="w-2 h-2 bg-brand-purple rounded-full mr-2"></span> Conditions
+                        </h4>
+                        <ul class="space-y-3">
+                            <li><a href="#"
+                                    class="text-gray-400 text-sm hover:text-white transition-colors">Depression</a></li>
+                            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Anxiety</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">PTSD</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">ADHD</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="md:col-span-4 lg:col-span-4">
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-5 flex items-center">
+                            <span class="w-2 h-2 bg-brand-orange rounded-full mr-2"></span> Get In Touch
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-4 p-3 rounded-xl bg-white/5 border border-white/5">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-brand-orange text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white text-sm font-medium">Call Us</p>
+                                    <p class="text-gray-400 text-xs">(555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-px bg-white/10 mt-12 mb-6"></div>
+
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    <p class="text-gray-500 text-xs">&copy; 2024 Karma Doctors & Associates. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+            easing: 'ease-out-cubic',
+        });
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
