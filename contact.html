@@ -81,9 +81,33 @@
             <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide">
                 <a href="index.html" class="hover:text-brand-purple transition-colors">Home</a>
                 <a href="about.html" class="hover:text-brand-purple transition-colors">About Us</a>
-                <a href="index.html#conditions" class="hover:text-brand-purple transition-colors">Conditions</a>
+                <div class="group relative">
+                    <a href="index.html#conditions"
+                        class="hover:text-brand-purple transition-colors flex items-center gap-1 pb-4 mb-[-16px]">
+                        Conditions
+                        <i
+                            class="fas fa-chevron-down text-[10px] text-gray-400 group-hover:text-brand-purple group-hover:rotate-180 transition-transform"></i>
+                    </a>
+
+                    <div
+                        class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="services/anxiety.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Anxiety</a>
+                        <a href="services/depression.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Depression</a>
+                        <a href="services/ptsd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">PTSD</a>
+                        <a href="services/adhd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">ADHD</a>
+                        <a href="services/bipolar.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Bipolar
+                            Disorder</a>
+                        <a href="services/ocd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">OCD</a>
+                    </div>
+                </div>
                 <a href="index.html#treatments" class="hover:text-brand-purple transition-colors">Treatments</a>
-                <a href="contact.html" class="text-brand-purple font-bold transition-colors">Contact</a>
+                <a href="contact.html" class="text-brand-purple font-bold transition-colors color-active">Contact</a>
             </nav>
 
             <!-- CTA & Mobile Toggle -->
@@ -390,17 +414,17 @@
                             Conditions
                         </h4>
                         <ul class="space-y-3">
-                            <li><a href="#conditions"
+                            <li><a href="services/depression.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Depression</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/anxiety.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Anxiety
                                     Disorders</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/ptsd.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">PTSD</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/bipolar.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Bipolar
                                     Disorder</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/adhd.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">ADHD</a></li>
                         </ul>
                     </div>

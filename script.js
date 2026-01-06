@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("main-header");
   const topBar = document.getElementById("top-contact-bar");
   const logoImg = header.querySelector("img");
-  const navLinks = header.querySelectorAll("nav a");
+  const navLinks = header.querySelectorAll("nav > a, nav > div > a");
   const desktopCta = header.querySelector("nav + div a"); // The Book Online button
   const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 

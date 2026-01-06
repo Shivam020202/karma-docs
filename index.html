@@ -61,9 +61,9 @@
             <div
                 class="flex flex-col sm:flex-row justify-between items-center text-xs text-brand-purple font-medium backdrop-blur rounded-lg px-4 py-2 shadow-sm border border-gray-200 bg-gray-100">
                 <div class="flex items-center space-x-4 mb-2 sm:mb-0">
-                    <span><i class="fas fa-phone-alt mr-2 text-brand-orange"></i> (555) 123-4567</span>
+                    <span><i class="fas fa-phone-alt mr-2 text-brand-orange"></i> +1 (951) 297 8375</span>
                     <span class="hidden sm:inline"><i class="fas fa-envelope mr-2 text-brand-orange"></i>
-                        info@karmadocs.com</span>
+                        contact@karmadocs.com</span>
                 </div>
                 <div>
                     <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
@@ -80,9 +80,33 @@
 
             <!-- Desktop Nav -->
             <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide">
-                <a href="index.html" class="hover:text-brand-purple transition-colors">Home</a>
+                <a href="index.html" class="text-brand-purple font-bold transition-colors color-active">Home</a>
                 <a href="about.html" class="hover:text-brand-purple transition-colors">About Us</a>
-                <a href="#conditions" class="hover:text-brand-purple transition-colors">Conditions</a>
+                <div class="group relative">
+                    <a href="#conditions"
+                        class="hover:text-brand-purple transition-colors flex items-center gap-1 pb-4 mb-[-16px]">
+                        Conditions
+                        <i
+                            class="fas fa-chevron-down text-[10px] text-gray-400 group-hover:text-brand-purple group-hover:rotate-180 transition-transform"></i>
+                    </a>
+
+                    <div
+                        class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="services/anxiety.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Anxiety</a>
+                        <a href="#conditions"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Depression</a>
+                        <a href="#conditions"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">PTSD</a>
+                        <a href="services/adhd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">ADHD</a>
+                        <a href="services/bipolar.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Bipolar
+                            Disorder</a>
+                        <a href="services/ocd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">OCD</a>
+                    </div>
+                </div>
                 <a href="#treatments" class="hover:text-brand-purple transition-colors">Treatments</a>
                 <a href="contact.html" class="hover:text-brand-purple transition-colors">Contact</a>
             </nav>
@@ -411,7 +435,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 <!-- Card 1: Depression -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
+                <a href="services/depression.html"
+                    class="relative group block overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="0">
                     <img src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp"
                         alt="Depression"
@@ -428,10 +453,11 @@
                             Learn More <i class="fas fa-arrow-right ml-1"></i>
                         </span>
                     </div>
-                </div>
+                </a>
 
                 <!-- Card 2: Anxiety -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
+                <a href="services/anxiety.html"
+                    class="relative group block overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                         alt="Anxiety"
@@ -448,10 +474,11 @@
                             Learn More <i class="fas fa-arrow-right ml-1"></i>
                         </span>
                     </div>
-                </div>
+                </a>
 
                 <!-- Card 3: PTSD -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
+                <a href="services/ptsd.html"
+                    class="relative group block overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="200">
                     <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227258/Gemini_Generated_Image_pl82z1pl82z1pl82_pqce33.png"
                         alt="PTSD"
@@ -468,10 +495,11 @@
                             Learn More <i class="fas fa-arrow-right ml-1"></i>
                         </span>
                     </div>
-                </div>
+                </a>
 
                 <!-- Card 4: ADHD -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
+                <a href="services/adhd.html"
+                    class="relative group block overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="300">
                     <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227888/Gemini_Generated_Image_ezawtnezawtnezaw_e5bgqx.webp"
                         alt="ADHD"
@@ -488,18 +516,19 @@
                             Learn More <i class="fas fa-arrow-right ml-1"></i>
                         </span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Card 5: Mood Disorders -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
+                <!-- Card 5: Bipolar Disorder -->
+                <a href="services/bipolar.html"
+                    class="relative group block overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
                     data-aos-delay="400">
                     <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227888/Gemini_Generated_Image_kailvakailvakail_shww2m.webp"
-                        alt="Mood Disorders"
+                        alt="Bipolar Disorder"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     <div
                         class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                        <h3 class="text-xl font-bold text-white mb-1">Mood Disorders</h3>
+                        <h3 class="text-xl font-bold text-white mb-1">Bipolar Disorder</h3>
                         <div
                             class="w-8 h-1 bg-brand-orange rounded-full mb-3 w-0 group-hover:w-8 transition-all duration-500">
                         </div>
@@ -508,32 +537,12 @@
                             Learn More <i class="fas fa-arrow-right ml-1"></i>
                         </span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Card 6: Schizophrenia -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer" data-aos="fade-up"
-                    data-aos-delay="500">
+                <!-- Card 6: OCD -->
+                <a href="services/ocd.html" class="relative group block overflow-hidden rounded-2xl h-64 cursor-pointer"
+                    data-aos="fade-up" data-aos-delay="500">
                     <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766227888/Gemini_Generated_Image_g8re93g8re93g8re_vgiygt.webp"
-                        alt="Schizophrenia"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                    <div
-                        class="absolute bottom-0 left-0 w-full p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                        <h3 class="text-xl font-bold text-white mb-1">Schizophrenia</h3>
-                        <div
-                            class="w-8 h-1 bg-brand-orange rounded-full mb-3 w-0 group-hover:w-8 transition-all duration-500">
-                        </div>
-                        <span
-                            class="text-white text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Learn More <i class="fas fa-arrow-right ml-1"></i>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Card 7: OCD -->
-                <div class="relative group overflow-hidden rounded-2xl h-64 cursor-pointer md:col-span-1 lg:col-span-2"
-                    data-aos="fade-up" data-aos-delay="600">
-                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766230247/Gemini_Generated_Image_i8uuz4i8uuz4i8uu_lwhvdh.webp"
                         alt="OCD"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -548,7 +557,9 @@
                             Learn More <i class="fas fa-arrow-right ml-1"></i>
                         </span>
                     </div>
-                </div>
+                </a>
+
+
 
             </div>
         </div>
@@ -1239,17 +1250,17 @@
                             Conditions
                         </h4>
                         <ul class="space-y-3">
-                            <li><a href="#conditions"
+                            <li><a href="services/depression.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Depression</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/anxiety.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Anxiety
                                     Disorders</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/ptsd.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">PTSD</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/bipolar.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Bipolar
                                     Disorder</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="services/adhd.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">ADHD</a></li>
                         </ul>
                     </div>
