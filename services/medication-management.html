@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Expert Psychiatric Medication Management in Palm Springs. Personalized medication plans, careful monitoring, and collaborative care for optimal mental health.">
+    <title>Psychiatric Medication Management | Karma Doctors & Associates</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#603177',
+                            purpleLight: '#7A4D8F',
+                            orange: '#F48F12',
+                            orangeHover: '#D67A0A',
+                            dark: '#1F2937',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for animations/overrides -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .pattern-grid {
+            background-image: radial-gradient(#603177 0.5px, transparent 0.5px), radial-gradient(#603177 0.5px, #f9fafb 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+
+<body class="font-body text-gray-700 antialiased overflow-x-hidden bg-gray-50">
+
+    <!-- Header/Nav -->
+    <header
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white/95 backdrop-blur-md shadow-sm py-2"
+        id="main-header">
+
+        <!-- Top Contact Bar -->
+        <div id="top-contact-bar"
+            class="container mx-auto px-4 mb-1 hidden opacity-0 transition-all duration-300 transform -translate-y-2">
+            <div
+                class="flex flex-col sm:flex-row justify-between items-center text-xs text-brand-purple font-medium px-4 py-1 backdrop-blur rounded-lg bg-gray-100/90 shadow-sm border border-gray-200">
+                <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+                    <span><i class="fas fa-phone-alt mr-2 text-brand-orange"></i> +1 (951) 297 8375</span>
+                    <span class="hidden sm:inline"><i class="fas fa-envelope mr-2 text-brand-orange"></i>
+                        contact@karmadocs.com</span>
+                </div>
+                <div>
+                    <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html"
+                class="text-2xl font-bold font-sans tracking-tight flex items-center transition-all duration-500">
+                <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Karma-Docs-Logo-Horizental_w48ja1.webp"
+                    alt="KDA logo" class="h-16 transition-all duration-500">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide">
+                <a href="../index.html" class="hover:text-brand-purple transition-colors">Home</a>
+                <a href="../about.html" class="hover:text-brand-purple transition-colors">About Us</a>
+                <div class="group relative">
+                    <a href="../index.html#conditions"
+                        class="hover:text-brand-purple transition-colors flex items-center gap-1 pb-4 mb-[-16px]">
+                        Conditions
+                        <i
+                            class="fas fa-chevron-down text-[10px] text-gray-400 group-hover:text-brand-purple group-hover:rotate-180 transition-transform"></i>
+                    </a>
+
+                    <div
+                        class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="anxiety.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Anxiety</a>
+                        <a href="depression.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Depression</a>
+                        <a href="ptsd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">PTSD</a>
+                        <a href="adhd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">ADHD</a>
+                        <a href="bipolar.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Bipolar
+                            Disorder</a>
+                        <a href="ocd.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">OCD</a>
+                    </div>
+                </div>
+
+                <!-- Services Dropdown (New) -->
+                <div class="group relative">
+                    <a href="#"
+                        class="text-brand-purple font-bold transition-colors flex items-center gap-1 pb-4 mb-[-16px]">
+                        Services
+                        <i
+                            class="fas fa-chevron-down text-[10px] text-gray-400 group-hover:text-brand-purple group-hover:rotate-180 transition-transform"></i>
+                    </a>
+                    <div
+                        class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="medication-management.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">Medication
+                            Management</a>
+                        <a href="tms.html"
+                            class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">TMS
+                            Therapy</a>
+                    </div>
+                </div>
+
+                <a href="../research-publications.html" class="hover:text-brand-purple transition-colors">Research</a>
+                <a href="../contact.html" class="hover:text-brand-purple transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center space-x-4">
+                <a href="../contact.html"
+                    class="hidden sm:inline-flex items-center justify-center bg-gradient-to-r from-brand-orange to-brand-orangeHover text-white px-5 py-2 rounded-full font-semibold uppercase text-xs tracking-wider transition-all transform hover:-translate-y-0.5 hover:shadow-lg shadow-md">
+                    Book Online
+                </a>
+                <button class="lg:hidden text-2xl text-gray-800 focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t border-gray-100 absolute w-full shadow-lg" id="mobile-menu">
+            <div class="flex flex-col px-4 py-4 space-y-4 font-medium uppercase text-sm text-gray-800">
+                <a href="../index.html" class="block hover:text-brand-purple">Home</a>
+                <a href="../about.html" class="block hover:text-brand-purple">About Us</a>
+                <a href="../index.html#conditions" class="block hover:text-brand-purple">Conditions</a>
+
+                <!-- Mobile Services Dropdown -->
+                <div class="border-l-2 border-brand-purple/20 pl-4 space-y-2">
+                    <span class="block text-brand-purple font-bold">Services</span>
+                    <a href="medication-management.html"
+                        class="block text-xs text-gray-600 hover:text-brand-purple pl-2">Medication Management</a>
+                    <a href="tms.html" class="block text-xs text-gray-600 hover:text-brand-purple pl-2">TMS Therapy</a>
+                </div>
+
+                <a href="../research-publications.html" class="block hover:text-brand-purple">Research</a>
+                <a href="../contact.html" class="block hover:text-brand-purple">Contact</a>
+                <a href="../contact.html" class="block text-brand-orange font-bold">Book Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop"
+                alt="Medication Management" class="w-full h-full object-cover">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-brand-purple/95 via-brand-purple/80 to-brand-purple/60 mix-blend-multiply">
+            </div>
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center text-white">
+            <div data-aos="fade-down">
+                <span
+                    class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold text-xs uppercase tracking-widest mb-6 shadow-lg">
+                    <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+                    Our Services
+                </span>
+            </div>
+            <h1 class="font-sans text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg tracking-tight"
+                data-aos="fade-up" data-aos-delay="100">
+                Comprehensive <br class="hidden md:block">Medication <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-yellow-300">Management</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md opacity-90"
+                data-aos="fade-up" data-aos-delay="200">
+                Finding the right balance. We provide expert psychiatric evaluation and personalized medication
+                strategies to help you reclaim your life.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="../contact.html"
+                    class="px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-orangeHover text-white font-bold uppercase tracking-wider transition-all shadow-lg hover:shadow-brand-orange/50 hover:-translate-y-1">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative" data-aos="fade-right">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-br from-brand-orange/20 to-brand-purple/20 rounded-3xl blur-xl overflow-hidden">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=1000&auto=format&fit=crop"
+                        alt="Medication Consultation"
+                        class="relative rounded-2xl shadow-2xl border-4 border-white w-full object-cover h-[500px] z-10 transform transition-transform hover:scale-[1.01] duration-500">
+                </div>
+
+                <div class="lg:col-span-7" data-aos="fade-left">
+                    <h4 class="text-brand-orange font-bold uppercase tracking-wider text-sm mb-2">Personalized Care</h4>
+                    <h2 class="font-sans text-4xl font-bold text-gray-900 mb-6">
+                        More Than Just <br> <span class="relative inline-block z-10">Prescriptions <span
+                                class="absolute bottom-1 left-0 w-full h-3 bg-brand-orange/20 -z-10"></span></span>
+                    </h2>
+
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            Medication management is not a one-time event; it is an ongoing, collaborative process. At
+                            <strong class="text-brand-purple">Karma Doctors & Associates</strong>, we understand that
+                            every individual's brain chemistry and lifestyle are unique.
+                        </p>
+                        <p>
+                            Our goal is to find the most effective medication regimen with the fewest side effects. We
+                            carefully assess your history, symptoms, and response to treatment, making precise
+                            adjustments to optimize your mental well-being.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Feature 1 -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div
+                                class="w-10 h-10 rounded-full bg-brand-purple/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-user-md text-brand-purple"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Expert Evaluation</h4>
+                                <p class="text-xs text-gray-500">Thorough psychiatric assessments to ensure accurate
+                                    diagnosis.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div
+                                class="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-pills text-brand-orange"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Precision Dosing</h4>
+                                <p class="text-xs text-gray-500">Optimizing dosage for maximum efficacy and minimal side
+                                    effects.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-chart-line text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Ongoing Monitoring</h4>
+                                <p class="text-xs text-gray-500">Regular follow-ups to track progress and adjust as
+                                    needed.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-shield-alt text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Safety First</h4>
+                                <p class="text-xs text-gray-500">Focus on long-term health, drug interactions, and
+                                    safety.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 bg-white pattern-grid relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="font-sans text-4xl font-bold text-gray-800 mb-4">Our Approach</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-brand-purple to-brand-orange mx-auto rounded-full mb-6">
+                </div>
+                <p class="text-gray-600 text-lg">
+                    We believe in a comprehensive path to wellness that empowers you.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:-translate-y-2 transition-all duration-300"
+                    data-aos="fade-up">
+                    <div
+                        class="absolute -top-6 left-8 bg-brand-purple text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:bg-brand-orange transition-colors">
+                        1</div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Comprehensive Assessment</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        We start with a detailed evaluation of your medical history, current symptoms, and lifestyle to
+                        understand the full picture of your mental health.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:-translate-y-2 transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute -top-6 left-8 bg-brand-purple text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:bg-brand-orange transition-colors">
+                        2</div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Customized Care Plan</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Based on your unique needs, we develop a tailored treatment plan that may include medication,
+                        lifestyle changes, and therapy referrals.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:-translate-y-2 transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute -top-6 left-8 bg-brand-purple text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:bg-brand-orange transition-colors">
+                        3</div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Continuous Optimization</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Mental health is dynamic. We continually monitor your progress and adjust your medication to
+                        ensure you are always functioning at your best.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="font-sans text-3xl font-bold text-gray-900">Common Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <details class="group p-6 bg-white rounded-xl shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium text-gray-800 list-none">
+                        <span>How often do I need to see the doctor?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-purple"></i>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed text-sm">
+                        Initially, follow-up appointments may be more frequent (e.g., every 2-4 weeks) to monitor your
+                        response to new medications. Once you are stable, appointments are typically scheduled every 3
+                        months.
+                    </p>
+                </details>
+
+                <!-- Question 2 -->
+                <details class="group p-6 bg-white rounded-xl shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium text-gray-800 list-none">
+                        <span>Can I stop taking medication if I feel better?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-purple"></i>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed text-sm">
+                        It is crucial to consult your doctor before stopping any medication. Stopping abruptly can cause
+                        withdrawal symptoms or a relapse of your condition. We can guide you on how to safely taper off
+                        if appropriate.
+                    </p>
+                </details>
+
+                <!-- Question 3 -->
+                <details class="group p-6 bg-white rounded-xl shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium text-gray-800 list-none">
+                        <span>Do you treat children and adolescents?</span>
+                        <span class="transition group-open:rotate-180">
+                            <i class="fas fa-chevron-down text-brand-purple"></i>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed text-sm">
+                        Yes, we provide medication management services for adolescents and adults. Please contact our
+                        office to discuss specific age ranges and requirements.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Rich Footer from Index -->
+    <footer class="relative overflow-hidden font-sans">
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-950 to-black"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-purple/10 via-transparent to-brand-orange/5"></div>
+
+        <div class="container mx-auto px-4 py-20 relative z-10 text-gray-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-12">
+
+                <!-- Brand -->
+                <div class="lg:col-span-4 space-y-6">
+                    <a href="../index.html" class="block">
+                        <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Karma-Docs-Logo-Horizental_w48ja1.webp"
+                            alt="Karma Doctors Logo" class="h-14 brightness-0 invert opacity-90">
+                    </a>
+                    <p class="text-gray-400 leading-relaxed text-sm max-w-sm">
+                        Pioneering the future of mental healthcare through personalized TMS therapy, advanced
+                        psychiatry, and compassionate care in Palm Springs.
+                    </p>
+                    <!-- Socials -->
+                    <div class="flex items-center gap-4 pt-2">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-purple hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-facebook-f text-sm group-hover:scale-110 transition-transform"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-purple hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-instagram text-sm group-hover:scale-110 transition-transform"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-purple hover:text-white transition-all duration-300 group">
+                            <i class="fab fa-linkedin-in text-sm group-hover:scale-110 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2 space-y-6">
+                    <h4 class="text-white font-bold uppercase tracking-widest text-xs">Menu</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="../index.html" class="hover:text-brand-orange transition-colors">Home</a></li>
+                        <li><a href="../about.html" class="hover:text-brand-orange transition-colors">About Us</a></li>
+                        <li><a href="../research-publications.html"
+                                class="hover:text-brand-orange transition-colors">Research</a></li>
+                        <li><a href="../contact.html" class="hover:text-brand-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Conditions -->
+                <div class="lg:col-span-3 space-y-6">
+                    <h4 class="text-white font-bold uppercase tracking-widest text-xs">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="medication-management.html"
+                                class="hover:text-brand-orange transition-colors text-brand-orange">Medication
+                                Management</a></li>
+                        <li><a href="tms.html" class="hover:text-brand-orange transition-colors">TMS Therapy</a></li>
+                        <li class="pt-2 text-gray-500 text-xs uppercase tracking-widest font-semibold">Conditions</li>
+                        <li><a href="adhd.html" class="hover:text-brand-orange transition-colors">ADHD Treatment</a>
+                        </li>
+                        <li><a href="depression.html" class="hover:text-brand-orange transition-colors">Depression</a>
+                        </li>
+                        <li><a href="anxiety.html" class="hover:text-brand-orange transition-colors">Anxiety
+                                Disorders</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-3 space-y-6">
+                    <h4 class="text-white font-bold uppercase tracking-widest text-xs">Contact Us</h4>
+                    <div class="space-y-4 text-sm">
+                        <p class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-brand-purple"></i>
+                            <span class="text-gray-400">2150 E Tahquitz Canyon Way, Suite 3,<br>Palm Springs, CA
+                                92262</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-brand-purple"></i>
+                            <a href="tel:+19512978375" class="hover:text-white transition-colors">+1 (951) 297 8375</a>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-brand-purple"></i>
+                            <a href="mailto:contact@karmadocs.com"
+                                class="hover:text-white transition-colors">contact@karmadocs.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="pt-8 mt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2024 Karma Doctors & Associates. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
