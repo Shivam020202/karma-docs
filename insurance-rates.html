@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="About Karma Doctors - We provide advanced science and technology in a serene, spa-like environment. Learn about our integrative approach to psychiatry.">
-    <title>About Us | Karma Doctors & Associates</title>
+        content="Insurance acceptance information, rates, and payment policies at Karma Doctors & Associates.">
+    <title>Insurance & Rates | Karma Doctors & Associates</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,21 +46,12 @@
     <link rel="stylesheet" href="style.css">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        /* Custom Utilities to break out of rigid grids */
-        .text-shadow {
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 
 <body class="font-body text-gray-700 antialiased overflow-x-hidden">
 
     <!-- Header/Nav -->
     <header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-4" id="main-header">
-
-        <!-- Top Contact Bar (Initially hidden, revealed on scroll via JS classes) -->
         <div id="top-contact-bar"
             class="container mx-auto px-4 mb-1 hidden opacity-0 transition-all duration-300 transform -translate-y-2">
             <div
@@ -86,7 +77,7 @@
             <!-- Desktop Nav -->
             <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide">
                 <a href="index.html" class="hover:text-brand-purple transition-colors">Home</a>
-                <a href="about.html" class="text-brand-purple font-bold transition-colors color-active">About Us</a>
+                <a href="about.html" class="hover:text-brand-purple transition-colors">About Us</a>
                 <div class="group relative">
                     <a href="index.html#conditions"
                         class="hover:text-brand-purple transition-colors flex items-center gap-1 pb-4 mb-[-16px]">
@@ -112,7 +103,7 @@
                             class="block px-4 py-2.5 hover:bg-gray-50 hover:text-brand-purple transition-colors text-xs font-bold text-black">OCD</a>
                     </div>
                 </div>
-                <!-- Services Dropdown (New) -->
+                <!-- Services Dropdown -->
                 <div class="group relative">
                     <a href="#"
                         class="hover:text-brand-purple transition-colors flex items-center gap-1 pb-4 mb-[-16px]">
@@ -168,22 +159,15 @@
         <div class="lg:hidden hidden bg-white border-t border-gray-100 absolute w-full shadow-lg" id="mobile-menu">
             <div class="flex flex-col px-4 py-4 space-y-4 font-medium uppercase text-sm">
                 <a href="index.html" class="block hover:text-brand-purple">Home</a>
-                <a href="about.html" class="block text-brand-orange font-bold">About Us</a>
+                <a href="about.html" class="block hover:text-brand-purple">About Us</a>
                 <a href="index.html#conditions" class="block hover:text-brand-purple">Conditions</a>
 
-                <!-- Mobile Services Dropdown -->
                 <div class="border-l-2 border-brand-purple/20 pl-4 space-y-2">
                     <span class="block text-brand-purple font-bold">Services</span>
                     <a href="services/medication-management.html"
                         class="block text-xs text-gray-600 hover:text-brand-purple pl-2">Medication Management</a>
                     <a href="services/tms.html" class="block text-xs text-gray-600 hover:text-brand-purple pl-2">TMS
                         Therapy</a>
-                </div>
-                <div class="border-l-2 border-brand-purple/20 pl-4 space-y-2 mt-2">
-                    <span class="block text-brand-purple font-bold">Patient Resources</span>
-                    <a href="insurance-rates.html" class="block text-xs text-gray-600 hover:text-brand-purple pl-2">Insurance & Rates</a>
-                    <a href="patient-education.html" class="block text-xs text-gray-600 hover:text-brand-purple pl-2">Patient Education</a>
-                    <a href="client-forms.html" class="block text-xs text-gray-600 hover:text-brand-purple pl-2">Client Forms</a>
                 </div>
                 <div class="border-l-2 border-brand-purple/20 pl-4 space-y-2 mt-2">
                     <span class="block text-brand-purple font-bold">Patient Resources</span>
@@ -198,241 +182,101 @@
         </div>
     </header>
 
-    <!-- Full Width Hero Section -->
-    <section class="relative h-[65vh] min-h-[500px] flex items-center">
+    <!-- Hero Section -->
+    <section class="relative h-[50vh] min-h-[400px] flex items-center justify-center">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537416/-7261_itcxch.png"
-                alt="Hero Background" class="w-full h-full object-cover">
-            <!-- Subtle Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent mix-blend-multiply">
-            </div>
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="Insurance and Rates" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-purple/50 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
-        <div class="container mx-auto px-6 relative z-10 pt-20">
-            <div class="max-w-3xl">
-                <h1 class="font-sans text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-md"
-                    data-aos="fade-right">
-                    Empowering Minds. <br><span class="text-brand-orange">Enhancing Lives.</span>
-                </h1>
-
-                <!-- SVG Divider -->
-                <div class="w-72 mb-8 opacity-90" data-aos="fade-right" data-aos-delay="100">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" class="w-full h-full">
-                        <path d="M450 65H130l-10-10h320l10 10z" fill="#F48F12" />
-                        <path d="M500 15l35 35-35 35-35-35z" fill="#ffffff" />
-                        <path d="M440 45H70l10-10h370l-10 10z" fill="#ffffff" />
-                    </svg>
-                </div>
-
-                <p class="text-xl text-gray-50 font-medium leading-relaxed max-w-xl" data-aos="fade-right"
-                    data-aos-delay="200">
-                    Experience a new standard of psychiatric care where science meets serenity.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seamless Editorial Section -->
-    <section class="bg-gray-50">
-        <!-- Section 1: Intro Text -->
-        <div class="max-w-7xl mx-auto px-6 py-12 text-center">
-            <div
-                class="inline-block bg-white text-brand-purple px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm border border-gray-100">
-                Who We Are
-            </div>
-            <h2 class="font-sans text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">Redefining Mental
-                Healthcare</h2>
-            <div class="w-24 h-1 bg-brand-orange mx-auto rounded-full mb-8"></div>
-            <p class="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
-                It is our privilege to offer you an unconditional invitation to experience mental health care in a
-                personalized, positive, and seamless fashion.
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="font-sans text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg" data-aos="fade-up">
+                Insurance & Rates
+            </h1>
+            <p class="text-xl text-gray-100 max-w-2xl mx-auto font-medium" data-aos="fade-up" data-aos-delay="100">
+                Transparent information about our pricing, accepted insurance plans, and payment policies.
             </p>
         </div>
-
-        <!-- Section 2: Split Visuals (No Whitespace) -->
-        <div class="grid md:grid-cols-2">
-            <!-- Image Side -->
-            <div class="max-h-[500px] md:h-auto relative overflow-hidden group">
-                <img src="https://images.unsplash.com/photo-1754294437684-7898b3701ac7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Integrative Psychiatry"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div
-                    class="absolute inset-0 bg-brand-purple/20 group-hover:bg-transparent transition-colors duration-500">
-                </div>
-            </div>
-
-            <!-- Content Side -->
-            <div class="bg-white flex flex-col justify-center p-12 md:p-16 lg:p-20">
-                <div class="mb-4">
-                    <i class="fas fa-leaf text-4xl text-brand-purple mb-6"></i>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Integrative Psychiatry</h3>
-                </div>
-                <p class="text-gray-600 text-base leading-relaxed mb-6">
-                    We provide a patient-centered approach that combines holistic medicine with evidence-based therapy.
-                    By addressing the physical, emotional, and spiritual aspects of health, we help you achieve total
-                    wellness that lasts.
-                </p>
-                <ul class="space-y-2 text-gray-700 font-medium">
-                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></span>
-                        Holistic Wellness</li>
-                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></span>
-                        Evidence-Based Therapy</li>
-                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></span>
-                        Mind-Body Connection</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Section 3: Split Visuals (Reversed) -->
-        <div class="grid md:grid-cols-2">
-            <!-- Content Side -->
-            <div
-                class="bg-brand-purple text-white flex flex-col justify-center p-12 md:p-16 lg:p-20 order-2 md:order-1">
-                <div class="mb-4">
-                    <i class="fas fa-microchip text-4xl text-brand-orange mb-6"></i>
-                    <h3 class="text-2xl font-bold mb-4">Cutting-Edge Technology</h3>
-                </div>
-                <p class="text-gray-100 text-base leading-relaxed mb-6 opacity-90">
-                    Science is at the core of what we do. At Karma Docs, we feature the latest FDA-cleared innovations
-                    in behavioral health to provide relief where traditional methods may have failed.
-                </p>
-                <div class="flex flex-wrap gap-3">
-                    <span
-                        class="px-4 py-2 bg-white/10 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">TMS
-                        Therapy</span>
-                    <span
-                        class="px-4 py-2 bg-white/10 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">Neurofeedback</span>
-                    <span
-                        class="px-4 py-2 bg-white/10 rounded-lg text-sm font-semibold backdrop-blur-sm border border-white/20">NuCalm</span>
-                </div>
-            </div>
-
-            <!-- Image Side -->
-            <div class="max-h-[500px] md:h-auto relative overflow-hidden group order-1 md:order-2">
-                <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766054048/apollo-consultation_1_peyxur_1_fuidsc.png"
-                    alt="Advanced Technology"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div
-                    class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors duration-500">
-                </div>
-            </div>
-        </div>
-
-        <!-- Section 4: Split Visuals (Normal) -->
-        <div class="grid md:grid-cols-2">
-            <!-- Image Side -->
-            <div class="max-h-[500px] md:h-auto relative overflow-hidden group">
-                <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537415/-7333_i1ejb8.png"
-                    alt="Good Karma"
-                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                <div
-                    class="absolute inset-0 bg-brand-orange/10 group-hover:bg-transparent transition-colors duration-500">
-                </div>
-            </div>
-
-            <!-- Content Side -->
-            <div class="bg-gray-100 flex flex-col justify-center p-12 md:p-16 lg:p-20">
-                <div class="mb-4">
-                    <i class="fas fa-hands-helping text-4xl text-gray-800 mb-6"></i>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Good Karma</h3>
-                </div>
-                <p class="text-gray-600 text-base leading-relaxed mb-6">
-                    Psychiatric treatment should be a hopeful, positive experience. We have curated a serene, spa-like
-                    environment that feels welcoming from the moment you step in.
-                </p>
-                <blockquote class="text-brand-purple font-medium text-xl italic">
-                    "We make every visit feel like a breath of fresh air."
-                </blockquote>
-            </div>
-        </div>
     </section>
 
-    <!-- Founder Section - Full Width Split -->
-    <section class="bg-white">
-        <div class="grid lg:grid-cols-12 min-h-[600px]">
-            <!-- Content Side (7/12) -->
-            <div class="lg:col-span-6 p-12 lg:p-24 flex flex-col justify-center">
-                <p class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-4">Medical Director</p>
-                <h2 class="font-sans text-3xl md:text-4xl font-bold text-gray-900 mb-8">Dr. Keerthy Sunder, MD</h2>
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
 
-                <div class="space-y-6 text-base text-gray-600 leading-relaxed font-light">
-                    <p>
-                        With over two decades of clinical experience, Dr. Sunder represents the convergence of modern
-                        science and compassionate care. As a Double Board-Certified Psychiatrist, he saw the limitations
-                        of traditional "medication-only" approaches and sought a better way.
+            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Rates & Insurance -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                    data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-brand-purple/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-file-invoice-dollar text-brand-purple"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Rates & Payment</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Please contact us for private pay sessions details and current rates.
                     </p>
-                    <p>
-                        He pioneered <strong class="text-gray-900 font-semibold">Integrated Psychiatry</strong> at Karma
-                        Docs to treat the <em>person</em>, not just the diagnosis. His methodology uniquely intertwines
-                        mindfulness, nutrition, and lifestyle interventions with advanced, non-invasive technologies
-                        like TMS.
+                    <p class="text-gray-600 mb-4">We accept cash & all major credit cards as forms of payment.</p>
+
+                    <h4 class="font-bold text-gray-800 mt-6 mb-2">Cancellation Policy</h4>
+                    <p class="text-gray-600 text-sm">
+                        If you are unable to attend a session, please make sure you cancel at least 24 hours beforehand.
+                        Otherwise, you may be charged for the full rate of the session.
                     </p>
                 </div>
 
-                <div class="mt-10 pt-10 border-t border-gray-100 grid items-center grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="text-center md:text-left">
-                        <span class="block text-2xl font-bold text-brand-purple">20+</span>
-                        <span class="text-sm text-gray-500 uppercase tracking-wide">Years Experience</span>
+                <!-- Insurance Info -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt text-brand-orange"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Insurance</h3>
                     </div>
-                    <div class="text-center md:text-left">
-                        <span class="block text-2xl font-bold text-brand-purple">Double</span>
-                        <span class="text-sm text-gray-500 uppercase tracking-wide">Board Certified</span>
-                    </div>
-                    <div class="text-center md:text-left hidden lg:block">
-                        <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766060387/Logo-2_bchwgb.webp"
-                            alt="Logo" class="h-12 opacity-50 invert">
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Depending on your current health insurance provider or employee benefit plan, it is possible for
+                        services to be covered in full or in part. Please contact your provider to verify how your plan
+                        compensates you for psychiatry & psychotherapy services.
+                    </p>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200">
+                        <p class="font-semibold text-xs uppercase text-gray-400 mb-2">Questions to ask your provider:
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start"><i
+                                    class="fas fa-check-circle text-brand-purple mt-1 mr-2 text-xs"></i> Does my plan
+                                include mental health benefits?</li>
+                            <li class="flex items-start"><i
+                                    class="fas fa-check-circle text-brand-purple mt-1 mr-2 text-xs"></i> Do I have a
+                                deductible? Have I met it?</li>
+                            <li class="flex items-start"><i
+                                    class="fas fa-check-circle text-brand-purple mt-1 mr-2 text-xs"></i> Is there a
+                                session limit per calendar year?</li>
+                            <li class="flex items-start"><i
+                                    class="fas fa-check-circle text-brand-purple mt-1 mr-2 text-xs"></i> Do I need
+                                approval from my primary care physician?</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Image Side (5/12) -->
-            <div class="lg:col-span-6 relative h-[500px] lg:h-auto bg-gray-200">
-                <img src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766063836/4990c7a6-07b7-48c2-9a5f-cd188d2ad944.png"
-                    alt="Dr. Keerthy Sunder" class="absolute inset-0 w-full h-full object-cover object-top">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:hidden"></div>
-                <div class="absolute bottom-6 left-6 text-white lg:hidden">
-                    <h3 class="text-2xl font-bold">Dr. Keerthy Sunder, MD</h3>
+
+            <!-- Insurance Logos -->
+            <div class="mt-16 text-center">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-8">We Accept Major Plans</p>
+                <div
+                    class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/Cigna_Healthcare_Logo_2_yxpvat.webp"
+                        alt="Cigna" class="h-10 hover:scale-110 transition-transform">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/United_Healthcare_Logo_Alternative_2_ci9trh.webp"
+                        alt="United Healthcare" class="h-10 hover:scale-110 transition-transform">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231588/Aetna_Logo_ss_Violet_RGB_Coated_vchoob.svg"
+                        alt="Aetna" class="h-10 hover:scale-110 transition-transform">
+                    <img src="https://res.cloudinary.com/damfndmrm/image/upload/v1766231589/download_ijs4qw.svg"
+                        alt="Insurance" class="h-10 hover:scale-110 transition-transform">
                 </div>
             </div>
-
-
-        </div>
-    </section>
-
-    <!-- Philosophy - Premium Glass Design -->
-    <section class="relative  py-6 bg-fixed bg-cover bg-center md:my-10"
-        style="background-image: url('https://images.unsplash.com/photo-1518531933037-8845d8adc04c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
-        <!-- Deep Overlay -->
-        <div
-            class="absolute inset-0 bg-gradient-to-b from-brand-dark/95 via-brand-purple/90 to-brand-dark/95 mix-blend-multiply container mx-auto md:rounded-full ">
-        </div>
-
-        <!-- Decorative Elements -->
-        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent">
-        </div>
-        <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent">
-        </div>
-
-        <div class="container  mx-auto px-6 relative z-10">
-            <!-- Header & Quote -->
-            <div class="max-w-4xl mx-auto text-center mb-10" data-aos="fade-up">
-                <span
-                    class="inline-block py-1 px-3 rounded-full bg-brand-orange/20 border border-brand-orange/30 text-brand-orange text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm">
-                    Our Philosophy
-                </span>
-                <h2 class="font-sans text-2xl md:text-3xl font-semibold text-white mb-6 tracking-tight">The Karma Way
-                </h2>
-                <div class="relative inline-block">
-                    <i class="fas fa-quote-left absolute -top-6 -left-8 text-6xl text-white/5"></i>
-                    <p class="text-xl md:text-2xl font-medium italic leading-relaxed text-gray-100/80 relative z-10">
-                        "Healing begins when you feel heard, understood, and supported in a non-judgmental space."
-                    </p>
-                    <i class="fas fa-quote-right absolute -bottom-8 -right-8 text-6xl text-white/5"></i>
-                </div>
-            </div>
-
-            <!-- 3 Glass Cards -->
-
         </div>
     </section>
 
@@ -490,9 +334,9 @@
                                     Team</a></li>
                             <li><a href="#process" class="text-gray-400 text-sm hover:text-white transition-colors">TMS
                                     Therapy</a></li>
-                            <li><a href="#conditions"
+                            <li><a href="patient-education.html"
                                     class="text-gray-400 text-sm hover:text-white transition-colors">Patient
-                                    Resources</a></li>
+                                    Education</a></li>
                         </ul>
                     </div>
 
@@ -539,8 +383,9 @@
                                     <i class="fas fa-map-marker-alt text-brand-purple text-sm"></i>
                                 </div>
                                 <div>
-                                    <p class="text-white text-sm font-medium">Visit Us</p>
-                                    <p class="text-gray-400 text-xs">123 Healing Way, Suite 100<br>Los Angeles, CA 90001
+                                    <p class="text-white text-sm font-medium">Palm Springs</p>
+                                    <p class="text-gray-400 text-xs">560 S Paseo Dorotea, Suite 4-B<br>Palm Springs, CA
+                                        92264
                                     </p>
                                 </div>
                             </div>
@@ -552,7 +397,7 @@
                                 </div>
                                 <div>
                                     <p class="text-white text-sm font-medium">Call Us</p>
-                                    <p class="text-gray-400 text-xs">(555) 123-4567</p>
+                                    <p class="text-gray-400 text-xs"> +1 (951) 297 8375</p>
                                 </div>
                             </div>
 
@@ -563,7 +408,7 @@
                                 </div>
                                 <div>
                                     <p class="text-white text-sm font-medium">Email Us</p>
-                                    <p class="text-gray-400 text-xs">info@karmadocs.com</p>
+                                    <p class="text-gray-400 text-xs">contact@karmadocs.com</p>
                                 </div>
                             </div>
                         </div>
@@ -595,7 +440,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
